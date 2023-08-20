@@ -1,7 +1,6 @@
-export interface IAppProps {
-}
 
-export function ReviewForm (props: IAppProps) {
+
+export function ReviewForm () {
   return (
     <div>
       

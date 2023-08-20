@@ -1,4 +1,4 @@
-import { Card, CardContent, CardActions, CardMedia, Typography, useMediaQuery, useTheme, Button } from '@mui/material';
+import { Card, CardContent, CardActions, CardMedia, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ProductInfo } from '../ProductInfo';
 

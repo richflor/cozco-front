@@ -1,4 +1,4 @@
-import { Box, Button, Slide, Typography, useMediaQuery, useTheme} from "@mui/material";
+import { Box, Button, Typography, useMediaQuery, useTheme} from "@mui/material";
 import * as items from "../../data/products.json"
 import { ProductCard } from "./ProductCard";
 import { useState } from "react";
@@ -13,14 +13,10 @@ export function Products () {
     const content = products.map(product => <ProductCard product={product} />)
 
     const [indexP, setIndex] = useState(0);
-    const [left, showLeft] = useState(false);
-    const [right, showRight] = useState(false);
 
     const clickLeft = (index:number) => {
         if(index > 0) {
             setIndex((i) => i-1);
-            showLeft(true);
-            showRight(false);
         }
         console.log(indexP)
     }
@@ -28,8 +24,6 @@ export function Products () {
     const clickRight = (index:number) => {
         if(index < content.length - 1) {
             setIndex((i) => i+1);
-            showRight(true);
-            showLeft(false);
         }
         console.log(indexP)
     }

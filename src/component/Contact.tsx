@@ -1,7 +1,6 @@
-export interface IAppProps {
-}
 
-export function Contact (props: IAppProps) {
+
+export function Contact () {
   return (
     <div>
       
