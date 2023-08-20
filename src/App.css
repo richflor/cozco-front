@@ -1,0 +1,101 @@
+/* colors */
+
+.dark-purple {
+    background-color: #881459;
+}
+
+.light-purple {
+    background-color: #B04F8E;
+}
+
+.dark-yellow {
+    background-color: #D9BB35;
+}
+
+.beige {
+    background-color: #FDE190;
+}
+
+.orange {
+    background-color: #F5C03F;
+}
+
+/* text */
+
+li, div, p, a {
+    color: #FDE190;
+}
+
+/* navbar */
+
+.navBar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar > img {
+    height: 80%;
+    object-fit: contain;
+}
+
+.links_nav_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.links_nav_phone_container {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 5vh;
+    align-items: center;
+}
+
+a {
+    outline: none;
+}
+
+a:hover {
+    outline: auto;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    height: 15vh;
+}
+
+.footer > img {
+    height: 25%;
+    object-fit: contain;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* min-width: 250px; */
+    height: 30%;
+}
+
+.footer_links > a {
+    height: 100%;
+}
+
+.footer_links > a > img {
+    height: 100%;
+    object-fit: contain;
+}
+
