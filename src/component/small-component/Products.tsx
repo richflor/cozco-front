@@ -41,7 +41,8 @@ export function Products () {
                 bgcolor: "secondary.dark"
             }}        
         >
-            <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.main", fontFamily: "Cunia"}}>Nos Produits</Typography>
+            <a href="#product" aria-hidden="true" id="product"></a>
+            <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
             <Box
                 sx={{
                     width: smallScreen ? "100vw" : "70vw",

@@ -14,7 +14,7 @@ export function ProductInfo ({ product }: propProduct) {
   };
   return (
   <>
-  <Button variant="text" color="secondary" onClick={handleOpen}>
+  <Button variant="text" color="primary" onClick={handleOpen}>
     Description
   </Button>
   <Dialog
@@ -23,8 +23,8 @@ export function ProductInfo ({ product }: propProduct) {
     >
       <Box
         sx={{
-          bgcolor: "primary.main",
-          color: "secondary.light",
+          bgcolor: "secondary.light",
+          color: "primary.dark",
         }}
       >
         <DialogTitle id="alert-dialog-title">
@@ -39,7 +39,7 @@ export function ProductInfo ({ product }: propProduct) {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="secondary">Retour</Button>
+          <Button onClick={handleClose} color="primary">Retour</Button>
         </DialogActions>
       </Box>
   </Dialog>

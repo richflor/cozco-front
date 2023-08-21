@@ -22,11 +22,15 @@
 
 /* text */
 
-li, div, p, a {
+/* li, div, p, a {
     color: #FDE190;
-}
+} */
 
 /* navbar */
+
+html {
+	scroll-behavior: smooth;
+}
 
 .navBar {
     height: 10vh;
@@ -34,6 +38,9 @@ li, div, p, a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 99;
 }
 
 .navBar > img {
@@ -44,7 +51,7 @@ li, div, p, a {
 .links_nav_container {
     display: flex;
     justify-content: space-evenly;
-    width: 15%;
+    width: 55%;
 }
 
 .links_nav_phone_container {

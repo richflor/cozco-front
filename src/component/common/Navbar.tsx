@@ -1,19 +1,14 @@
 
-import { Box, Button, SwipeableDrawer, useMediaQuery, useTheme, Typography } from "@mui/material";
+import { Box, Button, SwipeableDrawer, useMediaQuery, useTheme, Typography, Link } from "@mui/material";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export function Navbar () {
 
     const theme = useTheme();
     const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const [open, setDrawer] = useState(false);
-
-    const links = [
-        ["/accueil", "Accueil"],
-        ["/contact", "Contact"]
-    ]
+    const [open, setDrawer] = useState(false);  
 
     const toggleDrawer = (val:boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -29,12 +24,26 @@ export function Navbar () {
       setDrawer(val);
     };
 
-    const content = links.map(link => {
-        return <Link style={{width: "fit-content"}} to={link[0]}>{link[1]}</Link>
-    })
-
     const menuBtn = <Button onClick={toggleDrawer(true)}><Typography variant="h4" color="secondary">☰</Typography></Button>
     
+    const links = [
+        ["home", "Accueil"],
+        ["product", "Produits"],
+        ["partners", "Ou nous trouver ?"],
+        ["contact", "Contact"]
+    ]
+
+    const content = links.map(link => {
+        return <Link 
+                    color="secondary.dark"
+                    variant="subtitle2"
+                    href={`#${link[0]}`}
+                    underline="hover"
+                    onClick={toggleDrawer(false)}
+                >{link[1]}</Link>
+        // return <Link style={{width: "fit-content"}} to={link[0]}>{link[1]}</Link>
+    })  
+
     return (
         <nav className="navBar light-purple">
             <img src="/logo/full-logo.png" alt="logo_cuzco" />

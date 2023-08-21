@@ -23,7 +23,7 @@ export function ProductCard ({product}:propProduct) {
                 width: "60%",
                 minWidth: 225,
                 height: "fit-content",
-                bgcolor: "primary.main",
+                bgcolor: "secondary.light",
                 paddingBottom: 4
             }}
         >
@@ -34,7 +34,7 @@ export function ProductCard ({product}:propProduct) {
                 }}
             />
             <CardContent>
-                <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia"}}>{product.name}</Typography>
+                <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia", color: "primary.dark"}}>{product.name}</Typography>
                 <Link to={`/product/${product.id}`}></Link>
             </CardContent>
             <CardActions>
