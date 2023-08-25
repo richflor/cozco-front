@@ -2,7 +2,8 @@ import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Contact } from './component/Contact'
 import { Presentation } from './component/Presentation'
-import { Products } from './component/Products'
+// import { Products } from './component/Products'
+import { ProductsBis } from './component/ProductBis'
 import { Navbar } from './component/common/Navbar'
 import { Footer } from './component/common/Footer'
 import { createTheme, ThemeProvider } from '@mui/material'
@@ -30,13 +31,12 @@ const theme = createTheme({
 })
 
 function App() {
-
   return (
     <Router>
       <ThemeProvider theme={theme}>
         <Navbar/>
         <Presentation/>
-        <Products/>
+        <ProductsBis/>
         <Contact/>
         <Footer/>
       </ThemeProvider>

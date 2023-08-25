@@ -20,11 +20,12 @@ export function ProductCard ({product}:propProduct) {
     return (
         <Card
             sx={{
-                width: "60%",
+                width: "100%",
                 minWidth: 225,
                 height: "fit-content",
                 bgcolor: "secondary.light",
-                paddingBottom: 4
+                paddingBottom: 4,
+                display: "inline-block"
             }}
         >
             <CardMedia 
