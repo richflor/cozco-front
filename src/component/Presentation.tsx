@@ -9,6 +9,8 @@ export function Presentation () {
 
 
   return (
+    <>
+    <a href="#home" aria-hidden="true" id="home"></a>
     <Box 
         sx={{
             height: "60vh",
@@ -16,7 +18,7 @@ export function Presentation () {
             position: "relative"
         }}
     >
-        <a href="#home" aria-hidden="true" id="home"></a>
+        
         <img
             style={{
                 width: "100%",
@@ -40,6 +42,8 @@ export function Presentation () {
             <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia", color:"primary.dark"}} >C'est quoi cozco ?</Typography>
             <Typography variant={smallScreen ? "body2" : "body1"} >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, ea odit! Maiores, ipsum. Delectus asperiores, corrupti, quas ut ea dolorum et quisquam voluptates molestiae, rem sit. Excepturi, nemo! Quaerat, dolores.</Typography>
         </Box>
-    </Box>
+    </Box>    
+    </>
+
   );
 }

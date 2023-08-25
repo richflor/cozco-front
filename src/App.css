@@ -26,10 +26,27 @@
     color: #FDE190;
 } */
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 /* navbar */
 
 html {
 	scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
 }
 
 .navBar {
@@ -63,14 +80,6 @@ html {
     gap: 20px;
     padding-top: 5vh;
     align-items: center;
-}
-
-a {
-    outline: none;
-}
-
-a:hover {
-    outline: auto;
 }
 
 /* footer */

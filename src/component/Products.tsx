@@ -1,6 +1,6 @@
 import { Box, Button, Typography, useMediaQuery, useTheme} from "@mui/material";
-import * as items from "../../data/products.json"
-import { ProductCard } from "./ProductCard";
+import * as items from "../data/products.json"
+import { ProductCard } from "./product/ProductCard";
 import { useState } from "react";
 
 export function Products () {
@@ -29,6 +29,8 @@ export function Products () {
     }
 
     return (
+        <>
+        <a href="#product" aria-hidden="true" id="product"></a>
         <Box
             sx={{
                 width: "100vw",
@@ -41,7 +43,6 @@ export function Products () {
                 bgcolor: "secondary.dark"
             }}        
         >
-            <a href="#product" aria-hidden="true" id="product"></a>
             <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
             <Box
                 sx={{
@@ -73,5 +74,6 @@ export function Products () {
                 </Button>
             </Box>
         </Box>
+        </>
     );
 }

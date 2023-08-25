@@ -1,4 +1,4 @@
-import { Container, Typography, Divider, Box } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 
 
 export function Contact () {
@@ -20,7 +20,7 @@ export function Contact () {
           <div style={{
             height: "50%",
           }}>
-              <Typography variant="h4" color="primary" align="center" fontFamily="Cunia">Comment nous contacter ?</Typography>
+              <Typography variant="h4" color="primary.dark" align="center" fontFamily="Cunia">Comment nous contacter ?</Typography>
               <br />
               <br />
               <Typography variant="body1" align="center">Jorge Mellado - Fondateur</Typography>

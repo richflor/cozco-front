@@ -40,8 +40,8 @@ export function Navbar () {
                     href={`#${link[0]}`}
                     underline="hover"
                     onClick={toggleDrawer(false)}
+                    fontFamily={"Roboto"}
                 >{link[1]}</Link>
-        // return <Link style={{width: "fit-content"}} to={link[0]}>{link[1]}</Link>
     })  
 
     return (

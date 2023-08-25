@@ -1,9 +1,8 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import { Home } from './component/Home'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Contact } from './component/Contact'
-import { Presentation } from './component/small-component/Presentation'
-import { Products } from './component/small-component/Products'
+import { Presentation } from './component/Presentation'
+import { Products } from './component/Products'
 import { Navbar } from './component/common/Navbar'
 import { Footer } from './component/common/Footer'
 import { createTheme, ThemeProvider } from '@mui/material'
@@ -36,12 +35,6 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <Navbar/>
-        {/* <Routes>
-          <Route path='/accueil' element={<Home/>}/>
-          <Route path='/contact' element={<Contact/>} />
-          <Route path='/' element={ <Navigate to={"/accueil"}/> } />
-          <Route path='*' element={<Navigate to={"/accueil"}/> } />
-        </Routes> */}
         <Presentation/>
         <Products/>
         <Contact/>

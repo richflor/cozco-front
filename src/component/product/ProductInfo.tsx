@@ -1,6 +1,6 @@
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography } from "@mui/material";
 import { useState } from "react";
-import { propProduct } from "./small-component/ProductCard";
+import { propProduct } from "./ProductCard";
 
 export function ProductInfo ({ product }: propProduct) {
   const [open, setOpen] = useState(false);
