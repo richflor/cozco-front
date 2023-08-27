@@ -1,20 +1,39 @@
 {
-    "results":[
+    "products":[
         {
             "id": 1,
             "name": "chicha morada",
-            "price": 5.5,
-            "img": "/chicha/chicha-1.jpg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius mollitia reiciendis doloremque in ut, vitae fugiat impedit quam accusantium obcaecati temporibus dolorem voluptates corrupti at saepe, repellendus, voluptatibus et.",
-            "ingredients": ["ingrédient-1", "ingrédient-2", "ingrédient-3", "ingrédient-4"]
+            "price": {
+                "16 x 1l": 79.20,
+                "32 x 0.5l": 95.20
+            },
+            "img": "/chicha/chicha-cropped.png",
+            "desc": "La chica morada est une boisson péruvienne typique et populaire. Elle est fabriquée à partir d'une variété de maïs violet foncé qui est intensivement cultivée dans la cordillère des Andes au Pérou.",
+            "ingredients": ["maïs violet", "pomme", "ananas", "cannelle", "clous de girofle", "sucre de canne"]
         },
         {
             "id": 2,
             "name":"maracuya",
-            "price": 5.5,
-            "img": "/maracuya/maracuya-1.jpg",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius mollitia reiciendis doloremque in ut, vitae fugiat impedit quam accusantium obcaecati temporibus dolorem voluptates corrupti at saepe, repellendus, voluptatibus et.",
-            "ingredients": ["ingrédient-1", "ingrédient-2", "ingrédient-3", "ingrédient-4"]
+            "price": {
+                "16 x 1l": 84.80,
+                "32 x 0.5l": 95.20
+            },
+            "img": "/maracuya/maracuya-cropped.png",
+            "desc": "Le jus de Maracuya, ou fruit de la passion, est une boisson très populaire au Pérou et dans le reste de l'Amérique latine. C'est une boisson rafraichissante, à la fois douce et acide.",
+            "ingredients": ["fruit de la passion", "citron vert", "sucre de canne"]
+        }
+    ],
+    "partners":[
+        {
+            "id": 1,
+            "type": "restaurant",
+            "name": "qqch",
+            "address":"achechche",
+            "socials":{
+                "website":"kekce",
+                "instagram":"ejjce",
+                "facebook":""
+            }
         }
     ]
 }

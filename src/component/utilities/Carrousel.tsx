@@ -6,12 +6,13 @@ import { Box, Button, Typography,  useMediaQuery, useTheme } from "@mui/material
 
 
 interface Props {
-  children:JSX.Element[]
+  children:JSX.Element[],
+  backAndForth?:boolean
 }
 /**
  * Need children array of JSX element
  */
-export const Carousel = ({ children }:Props) => {
+export const Carousel = ({ children, backAndForth = false }:Props) => {
 
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -19,13 +20,21 @@ export const Carousel = ({ children }:Props) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = (newIndex:number) => {
-    if (newIndex < 0) {
-      newIndex = children.length - 1;
-    } else if (newIndex >= children.length) {
-      newIndex = 0;
+    // allow going back to start when hit the end, reverse also true
+    if (backAndForth) {
+      if (newIndex < 0) {
+        newIndex = children.length - 1;
+      } else if (newIndex >= children.length) {
+        newIndex = 0;
+      }
+      setActiveIndex(newIndex);
+      return;
     }
 
-    setActiveIndex(newIndex);
+    if (newIndex >= 0 && newIndex < children.length) {
+      console.log("upt")
+      setActiveIndex(newIndex);
+    }
   };
 
   const handlers = useSwipeable({
@@ -52,14 +61,14 @@ export const Carousel = ({ children }:Props) => {
         <Box
           sx={{
             display: "flex",
-            justifychildren: "center",
+            justifyContent: "center",
             gap: "10%"
           }}
         >
           <Button 
             variant="text"
             sx={{
-                minWidth: 0
+              minWidth: 0
             }}
             onClick={()=> updateIndex(activeIndex - 1)}
           >
@@ -68,7 +77,7 @@ export const Carousel = ({ children }:Props) => {
           <Button 
             variant="text"
             sx={{
-                minWidth: 0
+              minWidth: 0
             }}
             onClick={()=> updateIndex(activeIndex + 1)}
           >

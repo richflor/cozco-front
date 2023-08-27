@@ -22,6 +22,11 @@
 
 /* text */
 
+strong {
+    font-weight: bold !important;
+    color: #881459
+}
+
 /* li, div, p, a {
     color: #FDE190;
 } */
@@ -32,6 +37,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
+    color: none;
 }
 
 a:hover {
@@ -40,6 +46,7 @@ a:hover {
 
 a:active {
     text-decoration: none;
+    color:none
 }
 
 /* navbar */

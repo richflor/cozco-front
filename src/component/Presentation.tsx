@@ -13,34 +13,39 @@ export function Presentation () {
     <a href="#home" aria-hidden="true" id="home"></a>
     <Box 
         sx={{
-            height: "60vh",
+            height: "88vh",
             width: "100vw",
-            position: "relative"
+            position: "relative",
+            backgroundImage: "url(/demo.png)",
+            backgroundSize: "cover",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
         }}
     >
-        
-        <img
-            style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover"
-            }}
-            src="/demo.png" alt="photo"/>
         <Box
             sx={{
                 bgcolor: "secondary.light",
-                position: "absolute",
                 minWidth: 210,
                 maxWidth: smallScreen ? "80vw" : "40vw",
                 padding: 3,
-                top: "15%",
                 right: "10vw",
                 left: "10vw",
                 borderRadius: 6
             }}
         >
             <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia", color:"primary.dark"}} >C'est quoi cozco ?</Typography>
-            <Typography variant={smallScreen ? "body2" : "body1"} >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, ea odit! Maiores, ipsum. Delectus asperiores, corrupti, quas ut ea dolorum et quisquam voluptates molestiae, rem sit. Excepturi, nemo! Quaerat, dolores.</Typography>
+            <Typography variant={smallScreen ? "body2" : "body1"} >
+            Cozco est un projet familial né en 2019 avec pour ambition de populariser
+            la culture péruvienne à travers une boisson typique, <strong>la Chicha Morada</strong>. <br /> <br />
+            Peu connue de la culture occidentale, la Chicha Morada est un jus de fruits
+            à base de maïs violet originaire du <strong>Pérou</strong>. Afin de produire notre boisson
+            originale, nous importons le maïs violet et le transformons en boisson de
+            manière <strong>artisanale</strong> à Saint-Ouen-sur-Seine. <br /> <br />
+            A ce jour, Cozco est exclusivement distribué auprès de 12 restaurants en
+            Île-de-France. Nous aspirons à renforcer notre présence francilienne,
+            notamment grâce à <a target="_blank" href="https://www.saintouen-lesdocks.com/le-projet/la-halle/">la Halle Gourmande</a> de Saint-Ouen-sur-Seine.
+            </Typography>
         </Box>
     </Box>    
     </>

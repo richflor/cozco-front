@@ -5,7 +5,9 @@ import { ProductInfo } from './ProductInfo';
 export interface propProduct {
     product:{
         id:number,
-        price:number,
+        price:{
+            [key:string]:number
+        },
         name:string,
         img:string,
         desc: string;
@@ -24,7 +26,8 @@ export function ProductCard ({product}:propProduct) {
                 minWidth: 225,
                 height: "fit-content",
                 bgcolor: "secondary.light",
-                paddingBottom: 4,
+                paddingBottom: 2,
+                paddingTop: 2,
                 display: "inline-block"
             }}
         >
@@ -32,6 +35,7 @@ export function ProductCard ({product}:propProduct) {
                 image={`/photos${product.img}`}
                 sx={{ 
                     height: smallScreen ? 250 : 350,
+                    backgroundSize: "contain",
                 }}
             />
             <CardContent>

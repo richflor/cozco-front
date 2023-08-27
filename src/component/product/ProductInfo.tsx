@@ -35,7 +35,13 @@ export function ProductInfo ({ product }: propProduct) {
           <Typography variant="subtitle2">{product.desc}</Typography>
             <br />
             <Typography variant="subtitle2">Composition: {product.ingredients.join(", ")}</Typography>
-            <Typography variant="h6" align="right" sx={{ color: "secondary.light" }}>{product.price} €</Typography>
+            <br />
+            {Object.entries(product.price).map(q => 
+              <>
+                <Typography variant="subtitle1" sx={{ color: "primary.dark" }}>{`Quantité : ${q[0]}`}</Typography>
+                <Typography variant="subtitle2" sx={{ color: "primary.main" }}>{`Prix : ${q[1]} €`}</Typography>
+              </>
+            )}
           </DialogContentText>
         </DialogContent>
         <DialogActions>

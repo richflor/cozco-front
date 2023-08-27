@@ -8,7 +8,7 @@ export function Products () {
     const theme = useTheme();
     const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const products = items.results;
+    const products = items.products;
 
     const content = products.map(product => <ProductCard product={product} />)
 

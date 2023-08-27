@@ -8,7 +8,7 @@ export function ProductsBis () {
     const theme = useTheme();
     const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const products = items.results;
+    const products = items.products;
 
     const content = products.map(product => <ProductCard product={product} />)
 
@@ -18,8 +18,8 @@ export function ProductsBis () {
         <Box
             sx={{
                 width: "100vw",
-                height: "70vh",
-                paddingTop: "5vh",
+                // height: "120vh",
+                paddingBlock: "5vh",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -30,7 +30,7 @@ export function ProductsBis () {
             <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
             <Box
                 sx={{
-                    width: smallScreen ? "100vw" : "70vw",
+                    width: smallScreen ? "80vw" : "70vw",
                     height: "70vh",
                     display: "flex",
                     alignItems: "center",
