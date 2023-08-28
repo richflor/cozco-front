@@ -46,7 +46,9 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
     <div
       {...handlers}
       style={{
-        overflow: "hidden"
+        overflow: "hidden",
+        width: "100%",
+        height: "100%"
       }}
     >
         <Box
@@ -72,7 +74,7 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
             }}
             onClick={()=> updateIndex(activeIndex - 1)}
           >
-            <Typography variant={smallScreen ? "h5" : "h3"}>❮</Typography>
+            <Typography variant={smallScreen ? "h5" : "h3"} >❮</Typography>
           </Button>
           <Button 
             variant="text"
@@ -81,7 +83,7 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
             }}
             onClick={()=> updateIndex(activeIndex + 1)}
           >
-             <Typography variant={smallScreen ? "h5" : "h3"}>❯</Typography>
+             <Typography variant={smallScreen ? "h5" : "h3"} >❯</Typography>
           </Button>
         </Box>
     </div>

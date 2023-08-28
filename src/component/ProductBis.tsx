@@ -28,13 +28,12 @@ export function ProductsBis () {
             }}        
         >
             <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
+            <Typography variant="subtitle2" color="secondary.dark">break</Typography>
             <Box
                 sx={{
-                    width: smallScreen ? "80vw" : "70vw",
-                    height: "70vh",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: smallScreen ? "space-around" : "space-between",
+                    width: smallScreen ? "80vw" : "50vw",
+                    maxWidth: 450,
+                    // height: "70vh",
                 }}
             >
                 <Carousel>

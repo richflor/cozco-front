@@ -12,6 +12,21 @@ export function ProductInfo ({ product }: propProduct) {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const quantityDisplay = (quantity:string):string => {
+    let str:string;
+    switch (quantity) {
+      case "16x1l":
+        str = "16 bouteilles 1L"
+        break;
+      case "32x0.5l":
+        str = "32 bouteilles 50cl"
+        break;
+      default:
+        str = ""
+    }
+    return str;
+  }
   return (
   <>
   <Button variant="text" color="primary" onClick={handleOpen}>
@@ -38,7 +53,7 @@ export function ProductInfo ({ product }: propProduct) {
             <br />
             {Object.entries(product.price).map(q => 
               <>
-                <Typography variant="subtitle1" sx={{ color: "primary.dark" }}>{`Quantité : ${q[0]}`}</Typography>
+                <Typography variant="subtitle1" sx={{ color: "primary.dark" }}>{`Quantité : ${quantityDisplay(q[0])}`}</Typography>
                 <Typography variant="subtitle2" sx={{ color: "primary.main" }}>{`Prix : ${q[1]} €`}</Typography>
               </>
             )}

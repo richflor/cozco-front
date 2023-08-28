@@ -9,6 +9,7 @@ export function Contact () {
             maxWidth="sm"
             sx={{
               height: "75vh",
+              width: "100vw",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",

@@ -29,7 +29,7 @@ export function Navbar () {
     const links = [
         ["home", "Accueil"],
         ["product", "Produits"],
-        ["partners", "Ou nous trouver ?"],
+        ["partners", "Où nous trouver ?"],
         ["contact", "Contact"]
     ]
 

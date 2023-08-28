@@ -4,8 +4,8 @@
             "id": 1,
             "name": "chicha morada",
             "price": {
-                "16 x 1l": 79.20,
-                "32 x 0.5l": 95.20
+                "16x1l": 79.20,
+                "32x0.5l": 95.20
             },
             "img": "/chicha/chicha-cropped.png",
             "desc": "La chica morada est une boisson péruvienne typique et populaire. Elle est fabriquée à partir d'une variété de maïs violet foncé qui est intensivement cultivée dans la cordillère des Andes au Pérou.",
@@ -15,8 +15,8 @@
             "id": 2,
             "name":"maracuya",
             "price": {
-                "16 x 1l": 84.80,
-                "32 x 0.5l": 95.20
+                "16x1l": 84.80,
+                "32x0.5l": 95.20
             },
             "img": "/maracuya/maracuya-cropped.png",
             "desc": "Le jus de Maracuya, ou fruit de la passion, est une boisson très populaire au Pérou et dans le reste de l'Amérique latine. C'est une boisson rafraichissante, à la fois douce et acide.",
