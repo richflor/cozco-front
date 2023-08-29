@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardActions, Link, Typography } from "@mui/material";
+import { Card, CardContent, CardActions, Link, Typography } from "@mui/material";
 
 export interface IAppProps {
     partner:{
