@@ -1,5 +1,5 @@
 {
-    "products":[
+    "results":[
         {
             "id": 1,
             "name": "chicha morada",
@@ -21,19 +21,6 @@
             "img": "/maracuya/maracuya-cropped.png",
             "desc": "Le jus de Maracuya, ou fruit de la passion, est une boisson très populaire au Pérou et dans le reste de l'Amérique latine. C'est une boisson rafraichissante, à la fois douce et acide.",
             "ingredients": ["fruit de la passion", "citron vert", "sucre de canne"]
-        }
-    ],
-    "partners":[
-        {
-            "id": 1,
-            "type": "restaurant",
-            "name": "qqch",
-            "address":"achechche",
-            "socials":{
-                "website":"kekce",
-                "instagram":"ejjce",
-                "facebook":""
-            }
         }
     ]
 }

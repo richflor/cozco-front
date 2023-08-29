@@ -13,6 +13,13 @@ export function ProductInfo ({ product }: propProduct) {
     setOpen(false);
   };
 
+  const btnSX = { 
+    "&:hover": {
+      textDecoration: "underline",
+      color: "white"
+    }
+  }
+
   const quantityDisplay = (quantity:string):string => {
     let str:string;
     switch (quantity) {
@@ -29,7 +36,12 @@ export function ProductInfo ({ product }: propProduct) {
   }
   return (
   <>
-  <Button variant="text" color="primary" onClick={handleOpen}>
+  <Button 
+    variant="text" 
+    color="primary" 
+    onClick={handleOpen}
+    sx={btnSX}
+  >
     Description
   </Button>
   <Dialog

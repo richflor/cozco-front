@@ -2,11 +2,11 @@ import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Contact } from './component/Contact'
 import { Presentation } from './component/Presentation'
-// import { Products } from './component/Products'
-import { ProductsBis } from './component/ProductBis'
+import { Products } from './component/Products'
 import { Navbar } from './component/common/Navbar'
 import { Footer } from './component/common/Footer'
 import { createTheme, ThemeProvider } from '@mui/material'
+import { Partners } from './component/Partners'
 
 const theme = createTheme({
   palette:{
@@ -36,7 +36,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar/>
         <Presentation/>
-        <ProductsBis/>
+        <Products/>
+        <Partners/>
         <Contact/>
         <Footer/>
       </ThemeProvider>

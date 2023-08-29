@@ -13,12 +13,14 @@ export function Presentation () {
     <a href="#home" aria-hidden="true" id="home"></a>
     <Box 
         sx={{
-            height: "88vh",
+            height: "92vh",
             width: "100vw",
             position: "relative",
             backgroundImage: "url(/demo.png)",
             backgroundSize: "cover",
             display: "flex",
+            flexWrap: "wrap",
+            gap: "5vw",
             justifyContent: "center",
             alignItems: "center"
         }}
@@ -35,7 +37,8 @@ export function Presentation () {
             }}
         >
             <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia", color:"primary.dark"}} >C'est quoi cozco ?</Typography>
-            <Typography variant={smallScreen ? "body2" : "body1"} >
+            <br />
+            {/* <Typography variant={smallScreen ? "body2" : "body1"} >
             Cozco est un projet familial né en 2019 avec pour ambition de populariser
             la culture péruvienne à travers une boisson typique, <strong>la Chicha Morada</strong>. <br /> <br />
             Peu connue de la culture occidentale, la Chicha Morada est un jus de fruits
@@ -45,8 +48,21 @@ export function Presentation () {
             A ce jour, Cozco est exclusivement distribué auprès de 12 restaurants en
             Île-de-France. Nous aspirons à renforcer notre présence francilienne,
             notamment grâce à <a target="_blank" href="https://www.saintouen-lesdocks.com/le-projet/la-halle/">la Halle Gourmande</a> de Saint-Ouen-sur-Seine.
+            </Typography> */}
+            <Typography variant={smallScreen ? "body2" : "body1"} >
+            Découvrez l'authenticité des sauveurs péruviennes avec Cozco, votre producteur local de boissons
+            artisanales, <strong>la Chicha Morada</strong>. <br />
+            Nous avons à coeur de satisfaire les papilles parisiennes en tant que fournisseur exclusif pour les restaurants de la région.
             </Typography>
         </Box>
+        <video src="/video/chicha.mp4"
+            style={{
+                maxWidth: smallScreen ? "80vw" : "40vw",
+                borderRadius: 12
+            }}
+            controls
+            autoPlay
+        ></video>
     </Box>    
     </>
 

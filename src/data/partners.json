@@ -1,0 +1,53 @@
+{
+    "results":[
+        {
+            "id": 1,
+            "type": "restaurant",
+            "name": "Mikuna",
+            "address":"57 rue de Miromesnil, Paris, FR 75008",
+            "socials":{
+                "website":"https://www.mikunaparis.com/",
+                "instagram":"https://www.instagram.com/mikunaparis/"
+            }
+        },
+        {
+            "id": 2,
+            "type": "restaurant",
+            "name": "Yora Galeries Lafayette",
+            "address":"40 Boulevard Haussmann, Paris, FR 75009",
+            "socials":{
+                "website":"https://haussmann.galerieslafayette.com/yora-jose-arias/"
+            }
+        },
+        {
+            "id": 3,
+            "type": "restaurant",
+            "name": "Mi Suegrita",
+            "address":"116 Rue Orfila, 75020 Paris",
+            "socials":{
+                "facebook":"https://www.facebook.com/profile.php?id=100062939124146"
+            }
+        },
+        {
+            "id": 4,
+            "type": "restaurant",
+            "name": "Candela II",
+            "address":"32 Rue de la Folie-Regnault, 75011 Paris",
+            "socials":{
+                "website":"https://www.candelacaliente.com/",
+                "instagram":"https://www.instagram.com/restaurantecandela.paris/",
+                "facebook":"https://www.facebook.com/CandelaCalienteLatina"
+            }
+        },
+        {
+            "id": 5,
+            "type": "restaurant",
+            "name": "Asu Mare",
+            "address":"27 Rue de Meaux, 75019 Paris",
+            "socials":{
+                "instagram":"https://www.instagram.com/asumare.paris",
+                "facebook":"https://www.facebook.com/asumare.paris"
+            }
+        }
+    ]
+}

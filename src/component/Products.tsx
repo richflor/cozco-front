@@ -1,32 +1,16 @@
-import { Box, Button, Typography, useMediaQuery, useTheme} from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme} from "@mui/material";
 import * as items from "../data/products.json"
 import { ProductCard } from "./product/ProductCard";
-import { useState } from "react";
+import Carousel from "./utilities/Carrousel";
 
 export function Products () {
 
     const theme = useTheme();
     const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const products = items.products;
+    const products = items.results;
 
-    const content = products.map(product => <ProductCard product={product} />)
-
-    const [indexP, setIndex] = useState(0);
-
-    const clickLeft = (index:number) => {
-        if(index > 0) {
-            setIndex((i) => i-1);
-        }
-        console.log(indexP)
-    }
-
-    const clickRight = (index:number) => {
-        if(index < content.length - 1) {
-            setIndex((i) => i+1);
-        }
-        console.log(indexP)
-    }
+    const content = products.map(product => <ProductCard product={product} key={product.id}/>)
 
     return (
         <>
@@ -34,8 +18,8 @@ export function Products () {
         <Box
             sx={{
                 width: "100vw",
-                height: "70vh",
-                paddingTop: "5vh",
+                // height: "120vh",
+                paddingBlock: "5vh",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -44,34 +28,17 @@ export function Products () {
             }}        
         >
             <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
+            <Typography variant="subtitle2" color="secondary.dark">break</Typography>
             <Box
                 sx={{
-                    width: smallScreen ? "100vw" : "70vw",
-                    height: "70vh",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: smallScreen ? "space-around" : "space-between",
+                    width: smallScreen ? "80vw" : "50vw",
+                    maxWidth: 450,
+                    // height: "70vh",
                 }}
             >
-                <Button 
-                    variant="text"
-                    sx={{
-                        minWidth: 0
-                    }}
-                    onClick={()=> clickLeft(indexP)}
-                >
-                    <Typography variant={smallScreen ? "h5" : "h3"}>❮</Typography>
-                </Button>
-                    {content[indexP]}
-                <Button 
-                    variant="text"
-                    sx={{
-                        minWidth: 0
-                    }}
-                    onClick={()=> clickRight(indexP)}
-                >
-                    <Typography variant={smallScreen ? "h5" : "h3"}>❯</Typography>
-                </Button>
+                <Carousel>
+                    {content}
+                </Carousel>
             </Box>
         </Box>
         </>

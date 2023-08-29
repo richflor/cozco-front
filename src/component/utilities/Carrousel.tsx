@@ -11,6 +11,7 @@ interface Props {
 }
 /**
  * Need children array of JSX element
+ * Should be display: "inline-block"
  */
 export const Carousel = ({ children, backAndForth = false }:Props) => {
 
@@ -47,8 +48,7 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
       {...handlers}
       style={{
         overflow: "hidden",
-        width: "100%",
-        height: "100%"
+        width: "100%"
       }}
     >
         <Box

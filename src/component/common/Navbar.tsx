@@ -33,7 +33,7 @@ export function Navbar () {
         ["contact", "Contact"]
     ]
 
-    const content = links.map(link => {
+    const content = links.map((link,id)=> {
         return <Link 
                     color="secondary.dark"
                     variant="subtitle2"
@@ -41,6 +41,7 @@ export function Navbar () {
                     underline="hover"
                     onClick={toggleDrawer(false)}
                     fontFamily={"Roboto"}
+                    key={id}
                 >{link[1]}</Link>
     })  
 
