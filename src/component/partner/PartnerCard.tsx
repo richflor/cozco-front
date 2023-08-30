@@ -1,4 +1,4 @@
-import { Card, CardContent, CardActions, Link, Typography } from "@mui/material";
+import { Card, CardContent, CardActions, CardMedia, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export interface IAppProps {
     partner:{
@@ -6,6 +6,7 @@ export interface IAppProps {
         type:string,
         name:string,
         address:string,
+        photo:string,
         socials?:{
             website?:string,
             instagram?:string,
@@ -15,7 +16,10 @@ export interface IAppProps {
 }
 
 export function PartnerCard ({partner}: IAppProps) {
-  return (
+    const theme = useTheme();
+    const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  
+    return (
     <Card
         sx={{
             display: "inline-block",
@@ -23,9 +27,16 @@ export function PartnerCard ({partner}: IAppProps) {
             boxSizing: "border-box",
             padding: 2.5,
             bgcolor: "secondary.light",
-            height: 250
+            height: smallScreen ? 350 : 450
         }}
     >
+        <CardMedia 
+                image={`/resto/${partner.photo}`}
+                sx={{ 
+                    height: smallScreen ? 150 : 250,
+                    backgroundSize: "cover",
+                }}
+            />
         <CardContent>
             <Typography variant="h6" color="primary.dark" fontFamily="Cunia" sx={{ whiteSpace:"normal"}}>{partner.name}</Typography>
             <Typography variant="subtitle1" color="initial" sx={{ whiteSpace:"normal"}}>{partner.address}</Typography>

@@ -54,15 +54,15 @@ export function Presentation () {
             artisanales, <strong>la Chicha Morada</strong>. <br />
             Nous avons à coeur de satisfaire les papilles parisiennes en tant que fournisseur exclusif pour les restaurants de la région.
             </Typography>
-        </Box>
-        <video src="/video/chicha.mp4"
+            <br />
+            <video src="/video/demo.mp4"
             style={{
-                maxWidth: smallScreen ? "80vw" : "40vw",
+                maxWidth: smallScreen ? 250 : 350,
                 borderRadius: 12
             }}
             controls
-            autoPlay
-        ></video>
+            ></video>            
+        </Box>
     </Box>    
     </>
 

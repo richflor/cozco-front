@@ -16,7 +16,7 @@ export function ProductInfo ({ product }: propProduct) {
   const btnSX = { 
     "&:hover": {
       textDecoration: "underline",
-      color: "white"
+      color: "primary.dark"
     }
   }
 
