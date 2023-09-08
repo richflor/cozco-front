@@ -39,10 +39,10 @@ export function ProductCard ({product}:propProduct) {
                 }}
             />
             <CardContent>
-                <Typography variant={smallScreen ? "h6" : "h5"} sx={{fontFamily: "Cunia", color: "primary.dark"}}>{product.name}</Typography>
-                <Link to={`/product/${product.id}`}></Link>
+                <Typography variant={smallScreen ? "h6" : "h5"} sx={{paddingLeft:1, fontFamily: "Cunia", color: "primary.dark"}}>{product.name}</Typography>
+               
             </CardContent>
-            <CardActions>
+            <CardActions sx={{ paddingLeft: 3}}>
                 <ProductInfo product={product} />
             </CardActions>
         </Card>

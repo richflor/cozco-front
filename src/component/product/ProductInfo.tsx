@@ -13,13 +13,6 @@ export function ProductInfo ({ product }: propProduct) {
     setOpen(false);
   };
 
-  const btnSX = { 
-    "&:hover": {
-      textDecoration: "underline",
-      color: "primary.dark"
-    }
-  }
-
   const quantityDisplay = (quantity:string):string => {
     let str:string;
     switch (quantity) {
@@ -37,10 +30,16 @@ export function ProductInfo ({ product }: propProduct) {
   return (
   <>
   <Button 
-    variant="text" 
-    color="primary" 
+    variant="contained" 
+    color="primary"
     onClick={handleOpen}
-    sx={btnSX}
+    sx={{ 
+      "&:hover": {
+        textDecoration: "underline",
+        color: "secondary.light"
+      },
+      borderRadius: 2
+    }}
   >
     Description
   </Button>
