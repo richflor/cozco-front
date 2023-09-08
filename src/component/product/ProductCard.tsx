@@ -33,7 +33,7 @@ export function ProductCard ({product}:propProduct) {
             <CardMedia 
                 image={`/photos${product.img}`}
                 sx={{ 
-                    height: smallScreen ? 250 : 350,
+                    height: smallScreen ? 250 : 320,
                     backgroundSize: "contain",
                 }}
             />

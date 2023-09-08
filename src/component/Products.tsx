@@ -16,7 +16,6 @@ export function Products () {
         <Box
             sx={{
                 width: "100vw",
-                // height: "120vh",
                 paddingBlock: "5vh",
                 display: "flex",
                 flexDirection: "column",
@@ -25,7 +24,7 @@ export function Products () {
                 bgcolor: "secondary.dark"
             }}        
         >
-            <Typography variant={smallScreen ? "h5" : "h3"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
+            <Typography variant={smallScreen ? "h5" : "h4"} sx={{color: "primary.dark", fontFamily: "Cunia"}}>Nos Produits</Typography>
             <Typography variant="subtitle2" color="secondary.dark">break</Typography>
             <Box
                 sx={{

@@ -27,6 +27,9 @@ const theme = createTheme({
   },
   typography:{
     fontFamily: "Roboto, Cunia",
+    body2:{
+      fontSize: "0.800rem"
+    }
   }
 })
 

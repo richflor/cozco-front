@@ -53,14 +53,17 @@ a:active {
 
 html {
 	scroll-behavior: smooth;
-    scroll-padding-top: 6vh;
+    scroll-padding-top: 4vh;
 }
 
 .navBar {
     height: 8vh;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 3%;
     align-items: center;
     position: sticky;
     top:0;

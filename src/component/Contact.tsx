@@ -7,7 +7,7 @@ export function Contact () {
       <Container
             maxWidth="sm"
             sx={{
-              height: "75vh",
+              height: "80vh",
               width: "100vw",
               display: "flex",
               flexDirection: "column",

@@ -6,7 +6,7 @@ export function DiapoChicha () {
     const content:JSX.Element[] = [];
 
     const theme = useTheme();
-    const smallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+    const smallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
     const ingredients = [
         ["Maïs violet", "maiz.png"],
@@ -25,22 +25,21 @@ export function DiapoChicha () {
         width: "100%",
         height: "100%"
     }}>
-        <Typography variant="subtitle1" color="white" fontFamily="Cunia" sx={{transform: "rotate(-11deg)"}}>mais qu'est-ce que la chicha morada ?</Typography>
+        <Typography variant={smallScreen ? "subtitle1" : "h6"} color="white" fontFamily="Cunia" sx={{transform: "rotate(-11deg)", whiteSpace: "normal",  maxWidth: "90%", textAlign: "center"}}>mais qu'est-ce que la chicha morada ?</Typography>
     </div>
 
     content[1] = <Box sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "space-around",
         alignItems: "center",
         width: "100%",
         height: "100%",
         boxSizing: "border-box",
         padding: 4
     }}>
-        <Typography variant="h6" color="white" fontFamily="Cunia" sx={{ alignSelf: "start"}}>Histoire :</Typography>
-        <Typography variant="subtitle1" color="primary.main">break</Typography>
-        <Typography variant="body1" color="white" sx={{ whiteSpace:"normal"}}>Selon la tradition, la chicha a été découverte après l'inondation d'entrepôts contenant la récolte
+        <Typography variant={smallScreen ? "subtitle2" : "h6"} color="white" fontFamily="Cunia" sx={{ alignSelf: "start"}}>Histoire :</Typography>
+        <Typography variant={smallScreen ? "body2" : "body1"} color="white" sx={{ whiteSpace:"normal"}}>Selon la tradition, la chicha a été découverte après l'inondation d'entrepôts contenant la récolte
         de maïs violet provoquant un maltage partiel. <br /> Les incas refusèrent alors de keter le maïs et préférèrent goûter la boisson nouvellement
         obtenue.
         </Typography>    
@@ -73,7 +72,7 @@ export function DiapoChicha () {
             >
                 {item[0]}
                 <img src={`/icon_fruits/${item[1]}`} alt={item[1]} style={{
-                    height: 35,
+                    height: smallScreen ? 25 : 35,
                     objectFit: "cover",
                     position: "absolute",
                     left: i%2 === 0 ? -50 : 70,
@@ -81,7 +80,7 @@ export function DiapoChicha () {
             </Typography>
         </div>)}
         <img src="/logo/full-logo.png" alt="logo" style={{
-                height: 40,
+                height: smallScreen ? 30 : 40,
                 objectFit: "cover",
                 alignSelf: "start"
         }}/>  
@@ -94,7 +93,7 @@ export function DiapoChicha () {
             <Box sx={{
                 display: "inline-block",
                 backgroundColor: "primary.main",
-                height: smallScreen ? "35vh" : "40vh",
+                height: smallScreen ? "37vh" : "40vh",
                 width: "100%",
                 verticalAlign: "top"
             }}

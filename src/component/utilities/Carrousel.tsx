@@ -74,7 +74,7 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
             }}
             onClick={()=> updateIndex(activeIndex - 1)}
           >
-            <Typography variant={smallScreen ? "h5" : "h3"} >❮</Typography>
+            <Typography variant={smallScreen ? "h4" : "h3"} >❮</Typography>
           </Button>
           <Button 
             variant="text"
@@ -83,7 +83,7 @@ export const Carousel = ({ children, backAndForth = false }:Props) => {
             }}
             onClick={()=> updateIndex(activeIndex + 1)}
           >
-             <Typography variant={smallScreen ? "h5" : "h3"} >❯</Typography>
+             <Typography variant={smallScreen ? "h4" : "h3"} >❯</Typography>
           </Button>
         </Box>
     </div>
