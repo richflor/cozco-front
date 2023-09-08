@@ -4,7 +4,6 @@ import { Container, Typography, Box } from "@mui/material";
 export function Contact () {
   return (
     <Box sx={{ bgcolor: "secondary.light"}}>
-      <a href="#contact" aria-hidden="true" id="contact"></a>
       <Container
             maxWidth="sm"
             sx={{

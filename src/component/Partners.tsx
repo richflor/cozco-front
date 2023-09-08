@@ -10,8 +10,6 @@ export function Partners () {
   const content = partners.map(partner => <PartnerCard partner={partner} key={partner.id}/>)
 
   return (
-    <>
-    <a href="#partners" aria-hidden="true" id="partners"></a>
     <Box
       sx={{
         width: "100vw",
@@ -39,6 +37,5 @@ export function Partners () {
         </Carousel>
       </Box>
     </Box>
-    </>
   );
 }

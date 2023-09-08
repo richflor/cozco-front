@@ -55,18 +55,19 @@ export function ProductInfo ({ product }: propProduct) {
         }}
       >
         <DialogTitle id="alert-dialog-title">
-          <Typography variant="h6" sx={{ fontFamily: "Cunia" }} >{product.name}</Typography>
+          <Typography variant="h6" sx={{ fontFamily: "Cunia" }} align="center">{product.name}</Typography>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-          <Typography variant="subtitle2">{product.desc}</Typography>
+          <Typography variant="body1">{product.desc}</Typography>
             <br />
-            <Typography variant="subtitle2">Composition: {product.ingredients.join(", ")}</Typography>
+            <Typography variant="subtitle1">Composition: {product.ingredients.join(", ")}</Typography>
             <br />
+            <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>Pas disponible à l'unité, uniquement en caissettes.</Typography>
             {Object.entries(product.price).map(q => 
               <>
                 <Typography variant="subtitle1" sx={{ color: "primary.dark" }}>{`Quantité : ${quantityDisplay(q[0])}`}</Typography>
-                <Typography variant="subtitle2" sx={{ color: "primary.main" }}>{`Prix : ${q[1]} €`}</Typography>
+                <Typography variant="subtitle2" sx={{ color: "primary.main"  }}>{`Prix : ${q[1]} €`}</Typography>
               </>
             )}
           </DialogContentText>

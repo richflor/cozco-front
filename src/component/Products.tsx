@@ -13,8 +13,6 @@ export function Products () {
     const content = products.map(product => <ProductCard product={product} key={product.id}/>)
 
     return (
-        <>
-        <a href="#product" aria-hidden="true" id="product"></a>
         <Box
             sx={{
                 width: "100vw",
@@ -41,6 +39,5 @@ export function Products () {
                 </Carousel>
             </Box>
         </Box>
-        </>
     );
 }

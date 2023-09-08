@@ -34,10 +34,14 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={theme}>
+        <a href="#home" aria-hidden="true" id="home"></a>
         <Navbar/>
         <Presentation/>
+        <a href="#product" aria-hidden="true" id="product"></a>
         <Products/>
+        <a href="#partners" aria-hidden="true" id="partners"></a>
         <Partners/>
+        <a href="#contact" aria-hidden="true" id="contact"></a>
         <Contact/>
         <Footer/>
       </ThemeProvider>
