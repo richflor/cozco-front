@@ -13,7 +13,7 @@ export function Partners () {
     <Box
       sx={{
         width: "100vw",
-        minHeight: "60vh",
+        minHeight: "80vh",
         paddingTop: "5vh",
         bgcolor: "primary.light",
         display: "flex",
