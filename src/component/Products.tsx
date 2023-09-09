@@ -17,7 +17,7 @@ export function Products () {
             sx={{
                 width: "100vw",
                 paddingBlock: "5vh",
-                minHeight: "80vh",
+                minHeight: "86vh",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
