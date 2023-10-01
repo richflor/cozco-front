@@ -23,7 +23,7 @@ export function Contact () {
               <Typography variant="h4" color="primary.dark" align="center" fontFamily="Cunia">Comment nous contacter ?</Typography>
               <br />
               <br />
-              <Typography variant="body1" align="center">Jorge Mellado - Fondateur</Typography>
+              <Typography variant="body1" align="center">Jorge Mellado - Président</Typography>
               <Typography variant="body1" align="center">Téléphone : 06 64 31 68 83</Typography>
               <Typography variant="body1" align="center">Mail : contact.cozco@gmail.com</Typography>
               <br />

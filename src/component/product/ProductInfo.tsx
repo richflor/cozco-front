@@ -66,7 +66,7 @@ export function ProductInfo ({ product }: propProduct) {
             {Object.entries(product.price).map(q => 
               <>
                 <Typography variant="subtitle1" sx={{ color: "primary.dark" }}>{`Quantité : ${quantityDisplay(q[0])}`}</Typography>
-                <Typography variant="subtitle2" sx={{ color: "primary.main"  }}>{`Prix : ${q[1]} €`}</Typography>
+                <Typography variant="subtitle2" sx={{ color: "primary.main"  }}>{`Prix HT : ${q[1]} €`}</Typography>
               </>
             )}
           </DialogContentText>

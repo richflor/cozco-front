@@ -40,7 +40,7 @@ export function DiapoChicha () {
     }}>
         <Typography variant={smallScreen ? "subtitle2" : "h6"} color="white" fontFamily="Cunia" sx={{ alignSelf: "start"}}>Histoire :</Typography>
         <Typography variant={smallScreen ? "body2" : "body1"} color="white" sx={{ whiteSpace:"normal"}}>Selon la tradition, la chicha a été découverte après l'inondation d'entrepôts contenant la récolte
-        de maïs violet provoquant un maltage partiel. <br /> Les incas refusèrent alors de keter le maïs et préférèrent goûter la boisson nouvellement
+        de maïs violet provoquant un maltage partiel. <br /> Les incas refusèrent alors de jeter le maïs et préférèrent goûter la boisson nouvellement
         obtenue.
         </Typography>    
     </Box>
