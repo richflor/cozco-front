@@ -13,7 +13,7 @@ export function DiapoChicha () {
         ["Pommes","manzada.png"],
         ["Citrons","lemon.png"],
         ["Canelle","canelle.png"],
-        ["Clou de girogle","girofle.png"],
+        ["Clou de girofle","girofle.png"],
         ["Ananas","pina.png"],
         ["Sucre","sucre.png"]
     ]
