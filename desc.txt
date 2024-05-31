@@ -1,0 +1,12 @@
+/home
+    pres-1
+    pres-2
+    pres-3
+/product
+    product-1
+    product-2
+    product-3
+    product-cards
+    product-delivery
+/contact
+    contact-1

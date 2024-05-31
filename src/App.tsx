@@ -1,12 +1,15 @@
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Contact } from './component/Contact'
-import { Presentation } from './component/Presentation'
-import { Products } from './component/Products'
-import { Navbar } from './component/common/Navbar'
-import { Footer } from './component/common/Footer'
 import { createTheme, ThemeProvider } from '@mui/material'
-import { Partners } from './component/Partners'
+import { HomeFirst } from './component/home/HomeFirst'
+import { HomeSecond } from './component/home/HomeSecond'
+import { HomeThird } from './component/home/HomeThird'
+import { ProductFirst } from './component/product/ProductFirst'
+import { ProductSecond } from './component/product/ProductSecond'
+import { ProductThird } from './component/product/ProductThird'
+import { ProductCards } from './component/product/ProductCards'
+import { ProductDelivery } from './component/product/ProductDelivery'
+import { Contact } from './component/contact/Contact'
 
 const theme = createTheme({
   palette:{
@@ -37,16 +40,15 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={theme}>
-        <a href="#home" aria-hidden="true" id="home"></a>
-        <Navbar/>
-        <Presentation/>
-        <a href="#product" aria-hidden="true" id="product"></a>
-        <Products/>
-        <a href="#partners" aria-hidden="true" id="partners"></a>
-        <Partners/>
-        <a href="#contact" aria-hidden="true" id="contact"></a>
+        <HomeFirst/>
+        <HomeSecond/>
+        <HomeThird/>
+        <ProductFirst/>
+        <ProductSecond/>
+        <ProductThird/>
+        <ProductCards/>
+        <ProductDelivery/>
         <Contact/>
-        <Footer/>
       </ThemeProvider>
     </Router>
   ) 

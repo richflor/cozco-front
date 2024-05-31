@@ -126,3 +126,77 @@ html {
     object-fit: contain;
 }
 
+/* new css */
+.fullpage {
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1stpage {
+    object-fit: fill;
+    width: 100%;
+}
+
+.trivia {
+    width: 80%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 30px;
+}
+
+.textContainer > p {
+    font-weight: bold;
+}
+
+.bottle_outside {
+    width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.bottle_inside {
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.glass {
+    width: 25vh;
+    position: absolute;
+    object-fit: contain;
+    right: 70%;
+}
+
+.product_card_bottle {
+    object-fit: contain;
+    height: 100%;
+    border-radius: 40%;
+}
+
+.colis {
+    object-fit: contain;
+    height: 20%;
+}
+
+.livraison {
+    object-fit: contain;
+    height: 12vh;
+}
+
+.jorge {
+    object-fit: contain;
+    height: 25vh;
+}
+
+.logoContact {
+    object-fit: contain;
+    height: 15vh;
+}
